@@ -1,0 +1,141 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(241, 215, 158); /* Changed background color to beige */
+  color: #333; /* Keeping text color as dark gray */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: rgb(75, 48, 23); /* Changed header background color to brown */
+  color: #e9d6bb;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.featured-post {
+  flex-basis: 60%;
+  background-color: beige; /* Changed featured post background color to beige */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.featured-post h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.post-meta {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.featured-post p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.featured-post a {
+  color: rgb(75, 48, 23); /* Changed link color to brown */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.recent-posts {
+  flex-basis: 35%;
+  background-color: beige; /* Changed recent posts background color to beige */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.recent-posts h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.recent-posts article {
+  margin-bottom: 20px;
+}
+
+.recent-posts h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+#footer {
+  display: block; /* Initially show the footer for the transition to work */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(75, 48, 23); /* Changed footer background color to brown */
+  color: beige; /* Changed text color in the footer to beige */
+  text-align: center;
+  padding: 2px 0; /* Reduced padding */
+  z-index: 1000; /* Ensure the footer is on top of other elements */
+  transform: translateY(100%); /* Start with the footer out of view */
+  transition: transform 0.5s ease; /* Add a smooth transition effect */
+}
+
+.footer-content p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social-links li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-links a {
+  color: beige; /* Changed social links color to beige */
+  text-decoration: none;
+  font-size: 20px;
+}
